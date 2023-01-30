@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-
+    Dim percentage(9) As Double
     Dim score(9) As Double
     Dim x As Integer
     Dim schrijven As String = ""
@@ -28,10 +28,14 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         MsgBox(schrijven)
-        Dim percentage As String = ""
+        Dim percentage_string As String = ""
+
         For x = 0 To 9
-            percentage += ("score van leerling " & x + 1 & " = " & Math.Round((score(x) / totaal * 100), 2) & "%" & vbCrLf)
+            percentage(x) = Math.Round((score(x) / totaal * 100), 2)
         Next
-        MsgBox(percentage)
+        For x = 0 To 9
+            percentage_string += ("score van leerling " & x + 1 & " = " & percentage(x) & "%" & vbCrLf)
+        Next
+        MsgBox(percentage_string)
     End Sub
 End Class

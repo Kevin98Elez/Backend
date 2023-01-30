@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\Documents\\syntra\\backend\\les 5\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\oefeningen voor examen oef 3.vbproj",
+      "projectUniqueName": "C:\\Users\\kevin\\fork\\herhalingsoef examens\\Backend\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\oefeningen voor examen oef 3.vbproj",
       "projectName": "oefeningen voor examen oef 3",
-      "projectPath": "C:\\Users\\kevin\\Documents\\syntra\\backend\\les 5\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\oefeningen voor examen oef 3.vbproj",
+      "projectPath": "C:\\Users\\kevin\\fork\\herhalingsoef examens\\Backend\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\oefeningen voor examen oef 3.vbproj",
       "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kevin\\Documents\\syntra\\backend\\les 5\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\obj\\",
+      "outputPath": "C:\\Users\\kevin\\fork\\herhalingsoef examens\\Backend\\herhalingsoefeningen voor examen oef 3\\oefeningen voor examen oef 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
