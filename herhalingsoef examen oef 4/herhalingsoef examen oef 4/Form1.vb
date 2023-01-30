@@ -22,4 +22,15 @@
 
         MsgBox(som(getal_1, getal_2))
     End Sub
+
+    Private Sub test()
+        Dim text As String = InputBox("geef iets in")
+        Dim x As String = "test"
+        text &= x
+        MsgBox(text)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        test()
+    End Sub
 End Class
