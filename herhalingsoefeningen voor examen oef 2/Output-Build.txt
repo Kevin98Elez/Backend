@@ -1,0 +1,6 @@
+﻿Build started...
+1>------ Build started: Project: herhalingsoefeningen voor het examen oef 2, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>herhalingsoefeningen voor het examen oef 2 -> C:\Users\kevin\Documents\syntra\backend\les 5\herhalingsoefeningen voor het examen oef 2\herhalingsoefeningen voor het examen oef 2\bin\Debug\net6.0-windows\herhalingsoefeningen voor het examen oef 2.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Elapsed 00:00,394 ==========
