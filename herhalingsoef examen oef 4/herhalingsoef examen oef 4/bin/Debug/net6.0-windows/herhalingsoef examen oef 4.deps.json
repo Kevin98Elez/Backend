@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "herhalingsoef examen oef 4/1.0.0": {
+        "runtime": {
+          "herhalingsoef examen oef 4.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "herhalingsoef examen oef 4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
