@@ -2,7 +2,7 @@
 
     Dim naam As String = InputBox("geef uw naam in")
     Dim voornaam As String = InputBox("geef uw voornaam in")
-    Dim rekeningnmr As String = InputBox("geef uw rekeningnummer in")
+    Dim rekeningnmr As Integer = InputBox("geef uw rekeningnummer in")
 
 
     Dim gender As String = InputBox("geef uw gender in")
@@ -19,8 +19,9 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox1.Text = naam
         TextBox2.Text = voornaam
-        rekeningnmr = Format(rekeningnmr, "### ### ###")
-        TextBox3.Text = rekeningnmr
+
+        'rekeningnmr = String.Format(rekeningnmr, "### ### ###")
+        TextBox3.Text = rekeningnmr.ToString("### ### ###")
         CheckBox1.Checked = False
         CheckBox2.Checked = False
         Label5.Text = zichtrekening
@@ -84,11 +85,11 @@
         Dim spaarrekening_nieuw As Integer
 
         If CheckBox5.Checked Then
-            euro_nieuw = zichtrekening
-            spaarrekening_nieuw = spaarrekening
+            euro_nieuw = zichtrekening * 1.09
+            spaarrekening_nieuw = spaarrekening * 1.09
         End If
-        Label5.Text = euro_nieuw * 1.09
-        Label7.Text = spaarrekening_nieuw * 1.09
+        Label5.Text = euro_nieuw
+        Label7.Text = spaarrekening_nieuw
 
     End Sub
 
@@ -157,23 +158,49 @@
         MsgBox(log_array(y - 1))
     End Sub
 
+    Private Function rent(ByVal y)
+        Return y * rente / 100
+
+    End Function
+
+
+
+
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim jaren As Integer = InputBox("hoeveel jaren wil u sparen?")
-        Dim spaarrekening_extra As Integer = spaarrekening
+        Dim spaarrekening_extra As Integer
         Dim extra(jaren) As Integer
         Dim y As Integer = spaarrekening
         Dim z As Integer = 0
         For jaren = 0 To jaren
-            extra(jaren) = y * (rente / 100)
+            extra(jaren) = rent(y)
+            'y * (rente / 100)
             z += extra(jaren)
         Next
 
 
-        Dim spaarrekening_rente As Integer = 0
+
 
         spaarrekening_extra = spaarrekening + z
         MsgBox("na " & jaren - 1 & " jaren te hebben gespaard, zal er " & spaarrekening_extra & " op uw spaarrekening staan")
         MsgBox("na " & jaren - 1 & " jaren te hebben gespaard, zal er " & z & " euro extra op uw rekening staan")
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+        'If TextBox3.UseSystemPasswordChar = False Then
+        'TextBox3.UseSystemPasswordChar = True
+        'Else
+        'TextBox3.UseSystemPasswordChar = False
+        'End If
+
+        If TextBox3.PasswordChar = "X" Then
+            TextBox3.PasswordChar = ""
+        Else
+            TextBox3.PasswordChar = "X"
+        End If
+
 
     End Sub
 End Class

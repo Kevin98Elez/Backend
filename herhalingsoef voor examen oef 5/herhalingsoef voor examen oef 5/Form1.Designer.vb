@@ -42,6 +42,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -82,6 +83,7 @@ Partial Class Form1
         '
         Me.TextBox3.Location = New System.Drawing.Point(125, 64)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(88)
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(281, 27)
         Me.TextBox3.TabIndex = 5
@@ -98,6 +100,7 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Enabled = False
         Me.CheckBox1.Location = New System.Drawing.Point(126, 112)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(60, 24)
@@ -108,6 +111,7 @@ Partial Class Form1
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Enabled = False
         Me.CheckBox2.Location = New System.Drawing.Point(222, 113)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(72, 24)
@@ -226,11 +230,21 @@ Partial Class Form1
         Me.Button5.Text = "interest"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(526, 348)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(151, 29)
+        Me.Button6.TabIndex = 21
+        Me.Button6.Text = "verberg rekeningnr"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -252,7 +266,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Bankapp"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -278,4 +292,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class
